@@ -7,6 +7,7 @@ buildscript{
     repositories{
         google()
         mavenCentral()
+        maven{ url "https://raw.githubusercontent.com/Zelaux/MindustryRepo/master/repository" }
         maven{url 'https://oss.sonatype.org/content/repositories/snapshots/'}
         maven{url 'https://oss.sonatype.org/content/repositories/releases/'}
         maven{url 'https://jitpack.io'}
@@ -43,7 +44,7 @@ allprojects{
 
     ext{
         mindustry = {String submodule ->
-            return "com.github.Anuken.MindustryJitpack$submodule:$mindustryVersion"
+            return "com.github.Anuken.Mindustry$submodule:$mindustryVersion"
         }
 
         arc = {String submodule ->
